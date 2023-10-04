@@ -1,0 +1,70 @@
+/* Some basic resets */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: linear-gradient(to left, #00d5ff, #06f6da);
+  font-family: sans-serif;
+}
+.button-container {
+  display: flex;
+  gap: 3rem;
+  justify-content: center;
+  padding: 3rem;
+}
+.btn {
+  border-radius: 50px;
+  border: none;
+  color: #414141;
+  font-size: 20px;
+  font-weight: 700;
+  padding: 20px 35px;
+  box-shadow: 0px 10px 20px rgb(0, 0, 0, 0.2);
+}
+.modal {
+  position: absolute;
+  box-shadow: 0px 20px 20px rgb(0, 0, 0, 0.3);
+  transform: translate(-50%, -50%);
+  border-radius: 5px;
+  background-color: #fff;
+  top: 50%;
+  left: 50%;
+  padding: 4rem;
+  width: 70%;
+  z-index: 10;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.3);
+  backdrop-filter: blur(5px);
+  z-index: 5;
+}
+.title {
+  margin-bottom: 2rem;
+}
+.content {
+  font-size: 18px;
+  line-height: 1.5;
+  word-spacing: 3px;
+}
+.close {
+  position: absolute;
+  right: 1.5rem;
+  top: 2rem;
+  font-size: 2.5rem;
+  font-weight: 100;
+  background-color: transparent;
+  border: none;
+}
+
+.hidden {
+  display: none;
+}
